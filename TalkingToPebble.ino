@@ -8,8 +8,8 @@ static uint8_t s_data_buffer[256];
 static const uint16_t s_service_ids[] = {(uint16_t)0x1001};
 static const uint16_t s_attr_ids[] = {(uint16_t)0x1001};
 
-int serialPin = 8;  // for software serial
-int ledPin = 13;    // Uno LED
+int serialPin = 8;            // for software serial
+int ledPin = LED_BUILTIN;     // Teensy/Uno LED! :D
 
 void setup() {
   
